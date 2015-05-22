@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory</title>
+	<style>
+		.card {
+			border-radius: 4%;
+			margin: 5px;
+			box-shadow: 1px 1px 5px 1px #000;
+		}
+		#memoryCardsContainer {
+			height:0;
+		}
+	</style>
+</head>
+
+<body>
+    <div id="memoryCardsContainer"></div>
+    
+    <div id="memoryCounter"></div>
+
+    <select id="cardpics" name="cardpics">
+	  <option value="fairies">Fairies</option> 
+	  <option value="frozen" selected>Frozen</option>
+	  <option value="shapes">Shapes</option>
+	</select>
+
+	<input id="paircount" type="Number" max=28 min=3 value=12 name="paircount"></input>
+	<button id="memoryStart" onclick="memoryInit();">Start</button>
+
+  <script LANGUAGE="JavaScript" src="memory.js"></script>
+</body>
+</html>
